@@ -63,10 +63,4 @@
 
 ---
 
-### 🔗 Connect with Me
 
-<p align="left">
-  <a href="https://linkedin.com/in/yogesh-verma" target="_blank">
-    <img src="https://www.linkedin.com/in/yogesh-verma-70126a27a/" alt="LinkedIn" height="30" width="40" />
-  </a>
-</p>
