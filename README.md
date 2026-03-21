@@ -2,7 +2,7 @@
 <h3 align="center">MCA Student & Modern Android App Developer 🇮🇳</h3>
 
 <p align="center">
-  Building clean, scalable, and offline-first Android applications using Modern Tech Stacks. Always eager to solve complex problems and learn new architectures.
+  Building clean, scalable Android applications using Modern Tech Stacks. Always eager to solve complex problems and learn new architectures.
 </p>
 
 ---
@@ -11,9 +11,9 @@
 
 - 🎓 **Education:** Pursuing Master of Computer Applications (MCA)
 - 🌱 **I’m currently learning:** *Jetpack Compose, Clean Architecture, Ktor, Room Database, and mastering DSA with Java.*
-- 🛠️ **What I'm building right now:** Working on **Revisely**, an offline-first Android app to help students revise DSA and coding logic through MCQs.
+- 🛠️ **What I'm building right now:** Working on **Revisely**, a dynamic Android app to help students revise DSA and coding logic through interactive MCQs.
 - 👯 **I’m open to collaborate on:** *Open-source Android Projects & UI/UX implementations.*
-- 📫 **Reach me at:** *verma981133@gmail.com*
+- 📫 **Reach me at:** *yogesh.verma.dev@gmail.com*
 - ⚡ **Fun fact:** *I believe in the "Pilot vs Autopilot" mindset—I write code to understand the architecture, not just to make it run!* 😉
 
 ---
@@ -22,7 +22,7 @@
 
 * 🛒 **E-Commerce App (Myntra Clone):** A full-stack structured Android app built with Jetpack Compose, showcasing modern UI components, navigation, and API integration.
 * 📥 **Media Downloader:** A utility application capable of extracting links and downloading audio/video files in various formats, handling complex file systems and network streams.
-* 🧠 **Revisely (In Progress):** An offline tracker and revision app powered by Room Database to test coding logic and track user progress.
+* 🧠 **Revisely (In Progress):** A DSA and coding logic revision tracker to test knowledge through MCQs and track learning progress.
 
 ---
 
@@ -37,9 +37,6 @@
   </a>
   <a href="https://www.java.com" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" width="40" height="40" />
-  </a>
-  <a href="https://developer.android.com/training/data-storage/room" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="Room DB / SQLite" width="40" height="40" />
   </a>
   <a href="https://postman.com" target="_blank" rel="noreferrer">
     <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" width="40" height="40" />
@@ -57,15 +54,11 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=yogeshprajapatii&show_icons=true&locale=en&theme=radical" alt="Yogesh's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=yogeshprajapatii&show_icons=true&locale=en&theme=radical&hide_border=true" alt="Yogesh's GitHub Stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=yogeshprajapatii&show_icons=true&locale=en&layout=compact&theme=radical" alt="Top Languages" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=yogeshprajapatii&theme=radical" alt="GitHub Streak" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=yogeshprajapatii&show_icons=true&locale=en&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
 </p>
 
 ---
@@ -74,6 +67,6 @@
 
 <p align="left">
   <a href="https://linkedin.com/in/yogesh-verma" target="_blank">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" />
+    <img src="https://www.linkedin.com/in/yogesh-verma-70126a27a/" alt="LinkedIn" height="30" width="40" />
   </a>
 </p>
