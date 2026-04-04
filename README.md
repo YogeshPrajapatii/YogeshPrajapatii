@@ -87,8 +87,3 @@ Passionate Android Developer focused on crafting performant, scalable mobile app
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=yogeshprajapatii&label=Profile%20views&color=00FFFF&style=flat" alt="Profile Views" />
 </p>
-
-<br/>
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=yogeshprajapatii&label=Profile%20views&color=00FFFF&style=flat" alt="Profile Views" />
-</p>
