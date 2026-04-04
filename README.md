@@ -69,8 +69,14 @@ Passionate Android Developer focused on crafting performant, scalable mobile app
 
 ### 📊 GitHub Analytics
 
+### 📊 GitHub Analytics
+
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=yogeshprajapatii&show_icons=true&locale=en&theme=radical&hide_border=true&count_private=true" alt="Yogesh's GitHub Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=yogeshprajapatii&theme=radical&hide_border=true" alt="GitHub Streak" />
 </p>
 
 <p align="center">
@@ -78,4 +84,6 @@ Passionate Android Developer focused on crafting performant, scalable mobile app
 </p>
 
 <br/>
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=yogeshprajapatii&label=Profile%20views&color=00FFFF&style=flat" alt="Profile Views" /> </p>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=yogeshprajapatii&label=Profile%20views&color=00FFFF&style=flat" alt="Profile Views" />
+</p>
