@@ -69,8 +69,6 @@ Passionate Android Developer focused on crafting performant, scalable mobile app
 
 ### 📊 GitHub Analytics
 
-### 📊 GitHub Analytics
-
 <p align="center">
   <img src="https://github-stats-extended.vercel.app/api?username=yogeshprajapatii&show_icons=true&locale=en&theme=radical&hide_border=true&count_private=true" alt="Yogesh's GitHub Stats" />
 </p>
