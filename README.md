@@ -25,22 +25,29 @@ Passionate Android Developer focused on crafting performant, scalable mobile app
 
 <table width="100%">
   <tr>
-    <td width="50%" valign="top">
+    <td>
       <br/>
       <b>🛒 E-Commerce App (Myntra Clone)</b>
-      <p>A full-stack structured Android app showcasing modern UI components, navigation, and API integration using Jetpack Compose.</p>
-    </td>
-    <td width="50%" valign="top">
+      <p>A scalable full-stack application showcasing modern UI patterns and seamless API integration using Jetpack Compose. Focuses on robust state management and a responsive interface for a premium shopping experience.</p>
       <br/>
-      <b>📥 Media Downloader Tool</b>
-      <p>Utility app for link extraction and varied audio/video format downloads, managing complex file systems and network streams.</p>
     </td>
   </tr>
+
   <tr>
-    <td colspan="2" align="center">
+    <td>
       <br/>
-      <b>🧠 Revisely (In Progress)</b>
-      <p>A performance-oriented app powered by dynamic data fetching for students to revise coding logic and DSA fundamentals.</p>
+      <b>📥 Media Downloader Tool</b>
+      <p>A high-performance utility for multi-format downloads and efficient link extraction. Implements complex file system management and optimized network streams for reliable and fast media processing.</p>
+      <br/>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <br/>
+      <b>🧠 Revisely</b>
+      <p>A professional logic-revision engine built with Clean Architecture to help developers master DSA and coding patterns. Features intelligent revision scheduling, gamified streak protection, and data-driven progress tracking.</p>
+      <br/>
     </td>
   </tr>
 </table>
