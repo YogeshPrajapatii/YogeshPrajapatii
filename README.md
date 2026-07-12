@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=4000&pause=1000&color=39D353&center=true&vCenter=true&width=800&lines=Hi+👋,+I'm+Yogesh+Verma;MCA+Student+@+GJUST;Modern+Android+Developer;Java+%26+DSA+Enthusiast" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=4000&pause=1000&color=39D353&center=true&vCenter=true&width=800&lines=Hi+👋,+I'm+Yogesh+Verma;MCA+Student+@+GJUST;Modern+Android+Developer;" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -23,24 +23,29 @@
 
 <table width="100%">
   <tr>
-    <td width="50%" align="center">
+    <td width="100%">
       <br/>
-      <b>🛒 E-Commerce App (Myntra Clone)</b>
-      <p>A scalable full-stack application showcasing modern UI patterns and seamless API integration using Jetpack Compose.</p>
-      <br/>
-    </td>
-    <td width="50%" align="center">
-      <br/>
-      <b>📥 Media Downloader Tool</b>
-      <p>A high-performance utility for multi-format downloads and efficient link extraction with optimized network streams.</p>
+      <h3>🌐 ServerAlive (Uptime Monitor)</h3>
+      <p>Engineered the Android client for a real-time monitoring platform processing 10,000+ daily checks. Features a premium UI with <b>Jetpack Compose</b>, rendering animated Canvas heatmaps at 60 FPS, and integrates <b>FCM</b> for sub-second push notifications.</p>
+      <p><i>Tech Stack: Kotlin, Jetpack Compose, REST APIs, FCM, Razorpay</i></p>
       <br/>
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center">
+    <td width="100%">
       <br/>
-      <b>🧠 Revisely</b>
-      <p>A professional logic-revision engine built with Clean Architecture. Features intelligent revision scheduling, gamified streak protection, and data-driven progress tracking.</p>
+      <h3>🧠 Revisely (Logic-Building Tool)</h3>
+      <p>Developed a robust offline-first educational engine featuring 2800+ MCQs and logic revision tools. Architected with <b>Clean Architecture</b>, decoupled using <b>Hilt DI</b>, and utilizes <b>Room DB</b> with <b>StateFlow</b> to ensure 100% data availability without internet connectivity.</p>
+      <p><i>Tech Stack: Kotlin, Jetpack Compose, Room DB, Hilt DI, Clean Architecture</i></p>
+      <br/>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%">
+      <br/>
+      <h3>⚡ ZenLoad (Media Fetcher)</h3>
+      <p>Built a highly optimized asynchronous media fetching engine leveraging <b>Kotlin Coroutines</b> and <b>Flow</b>. Designed to provide real-time reactive updates and parse multi-format URLs instantly without blocking the main UI thread during complex I/O operations.</p>
+      <p><i>Tech Stack: Kotlin, Coroutines, Flow</i></p>
       <br/>
     </td>
   </tr>
