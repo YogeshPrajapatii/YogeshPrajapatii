@@ -1,3 +1,4 @@
+
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=4000&pause=1000&color=39D353&center=true&vCenter=true&width=800&lines=Hi+👋,+I'm+Yogesh+Verma;MCA+Student+@+GJUST;Modern+Android+Developer;" alt="Typing SVG" />
 </p>
