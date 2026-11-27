@@ -1,97 +1,111 @@
+<div align="center">
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=4000&pause=1000&color=39D353&center=true&vCenter=true&width=800&lines=Hi+👋,+I'm+Yogesh+Verma;MCA+Student+@+GJUST;Modern+Android+Developer;" alt="Typing SVG" />
-</p>
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3500&pause=900&color=39D353&center=true&vCenter=true&width=850&lines=Hi%2C+I'm+Yogesh+Verma+%F0%9F%91%8B;MCA+Student+%40+GJUST;Android+Developer+%7C+Kotlin+%7C+Jetpack+Compose" alt="Typing introduction" />
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/yogesh-verma-70126a27a/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-%230D1117?style=for-the-badge&logo=linkedin&logoColor=39D353" alt="LinkedIn" />
+<p>
+  <a href="https://www.linkedin.com/in/yogesh-verma-70126a27a/">
+    <img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=39D353" alt="LinkedIn" />
   </a>
   <a href="mailto:verma981133@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-%230D1117?style=for-the-badge&logo=gmail&logoColor=39D353" alt="Gmail" />
+    <img src="https://img.shields.io/badge/Gmail-0D1117?style=for-the-badge&logo=gmail&logoColor=39D353" alt="Email" />
+  </a>
+  <a href="https://github.com/YogeshPrajapatii">
+    <img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=39D353" alt="GitHub" />
   </a>
 </p>
 
-<br>
+**Android Developer** focused on building maintainable, responsive mobile applications with **Kotlin** and **Jetpack Compose**.
 
-> **Passionate Android Developer** focused on crafting performant, scalable mobile applications. Currently leveraging MCA academics at GJUST to deepen understanding of **Clean Architecture, Jetpack Compose, Ktor, and Room Database**. Actively honing algorithmic thinking using Java for robust problem-solving.
-> 
-> *Current Philosophy: "Mastering the architecture behind the code to build sustainable software."*
+I enjoy working on clean architecture, offline-first experiences, API integration, and practical product features. I use Java for data structures, algorithms, and problem-solving.
+
+</div>
 
 ---
 
-<h3 align="center">🔥 Featured Projects</h3>
+## 👨‍💻 About
 
-<table width="100%">
+- 🎓 MCA student at **GJUST**
+- 📱 Focused on **Android development** and modern Kotlin
+- 🧱 Interested in **Clean Architecture, MVVM, Coroutines, Flow, Room, and Hilt**
+- 🧠 Practising data structures, algorithms, and problem-solving with Java
+- 🚀 Building and improving real-world applications
+
+## 🚀 Featured Projects
+
+<table>
   <tr>
-    <td width="100%">
-      <br/>
-      <h3>🌐 ServerAlive (Uptime Monitor)</h3>
-      <p>Engineered the Android client for a real-time monitoring platform processing 10,000+ daily checks. Features a premium UI with <b>Jetpack Compose</b>, rendering animated Canvas heatmaps at 60 FPS, and integrates <b>FCM</b> for sub-second push notifications.</p>
-      <p><i>Tech Stack: Kotlin, Jetpack Compose, REST APIs, FCM, Razorpay</i></p>
-      <br/>
+    <td width="33%" valign="top">
+      <h3>🌐 ServerAlive</h3>
+      <p>Android client for a real-time uptime monitoring platform, with monitoring dashboards, animated status heatmaps, and push notifications.</p>
+      <p><strong>Stack</strong><br/>Kotlin · Jetpack Compose · REST APIs · FCM</p>
     </td>
-  </tr>
-  <tr>
-    <td width="100%">
-      <br/>
-      <h3>🧠 Revisely (Logic-Building Tool)</h3>
-      <p>Developed a robust offline-first educational engine featuring 2800+ MCQs and logic revision tools. Architected with <b>Clean Architecture</b>, decoupled using <b>Hilt DI</b>, and utilizes <b>Room DB</b> with <b>StateFlow</b> to ensure 100% data availability without internet connectivity.</p>
-      <p><i>Tech Stack: Kotlin, Jetpack Compose, Room DB, Hilt DI, Clean Architecture</i></p>
-      <br/>
+    <td width="33%" valign="top">
+      <h3>🧠 Revisely</h3>
+      <p>Offline-first learning app with MCQs and revision tools, structured around clean architecture and locally persisted learning data.</p>
+      <p><strong>Stack</strong><br/>Kotlin · Compose · Room · Hilt · StateFlow</p>
     </td>
-  </tr>
-  <tr>
-    <td width="100%">
-      <br/>
-      <h3>⚡ ZenLoad (Media Fetcher)</h3>
-      <p>Built a highly optimized asynchronous media fetching engine leveraging <b>Kotlin Coroutines</b> and <b>Flow</b>. Designed to provide real-time reactive updates and parse multi-format URLs instantly without blocking the main UI thread during complex I/O operations.</p>
-      <p><i>Tech Stack: Kotlin, Coroutines, Flow</i></p>
-      <br/>
+    <td width="33%" valign="top">
+      <h3>⚡ ZenLoad</h3>
+      <p>Asynchronous media fetching experience with reactive progress updates and non-blocking I/O.</p>
+      <p><strong>Stack</strong><br/>Kotlin · Coroutines · Flow</p>
     </td>
   </tr>
 </table>
 
----
+## 🛠️ Tech Stack
 
-<h3 align="center">🛠 Technologies & Tools</h3>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/kotlin-%230D1117.svg?style=for-the-badge&logo=kotlin&logoColor=39D353" alt="Kotlin"/>
-  <img src="https://img.shields.io/badge/java-%230D1117.svg?style=for-the-badge&logo=openjdk&logoColor=39D353" alt="Java"/>
-  <img src="https://img.shields.io/badge/Android-%230D1117?style=for-the-badge&logo=android&logoColor=39D353" alt="Android"/>
-  <img src="https://img.shields.io/badge/Compose-%230D1117?style=for-the-badge&logo=jetpackcompose&logoColor=39D353" alt="Jetpack Compose"/>
-  <br><br>
-  <img src="https://img.shields.io/badge/Ktor-%230D1117?style=for-the-badge&logo=kotlin&logoColor=39D353" alt="Ktor"/>
-  <img src="https://img.shields.io/badge/Room_DB-%230D1117?style=for-the-badge&logo=sqlite&logoColor=39D353" alt="Room"/>
-  <img src="https://img.shields.io/badge/Firebase-%230D1117?style=for-the-badge&logo=firebase&logoColor=39D353" alt="Firebase"/>
-  <br><br>
-  <img src="https://img.shields.io/badge/git-%230D1117.svg?style=for-the-badge&logo=git&logoColor=39D353" alt="Git"/>
-  <img src="https://img.shields.io/badge/figma-%230D1117.svg?style=for-the-badge&logo=figma&logoColor=39D353" alt="Figma"/>
-  <img src="https://img.shields.io/badge/Postman-%230D1117?style=for-the-badge&logo=postman&logoColor=39D353" alt="Postman"/>
-</p>
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=kotlin,java,android,gradle,firebase,sqlite,git,github,figma,postman&theme=dark" alt="Technology stack" />
+</div>
 
 ---
 
-<h3 align="center">📊 GitHub Analytics</h3>
+## 📊 GitHub Analytics
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=yogeshprajapatii&bg_color=0D1117&color=39D353&line=39D353&point=FFFFFF&area=true&hide_border=false&hide_title=true&custom_title=GitHub%20Contribution%20Graph" alt="Yogesh's Contribution Graph" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=yogeshprajapatii&hide_border=false&background=0D1117&ring=39D353&fire=39D353&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=FFFFFF&dates=FFFFFF&currStreakLabel=39D353&stroke=39D353&borderRadius=10" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=yogeshprajapatii&show_icons=true&hide_border=false&count_private=true&bg_color=0D1117&title_color=39D353&text_color=FFFFFF&icon_color=39D353&border_radius=10&border_color=39D353" alt="Yogesh's GitHub Stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-stats-extended.vercel.app/api/top-langs?username=yogeshprajapatii&show_icons=true&layout=compact&hide_border=false&bg_color=0D1117&title_color=39D353&text_color=FFFFFF&icon_color=39D353&border_radius=10&border_color=39D353" alt="Top Languages" />
-</p>
+<div align="center">
+  <h3>🔥 Daily Contribution Streak</h3>
+  <a href="https://github.com/YogeshPrajapatii">
+    <img src="./profile/streak.svg" alt="Daily GitHub contribution streak" width="72%" />
+  </a>
+  <br/>
+  <sub>Daily streak is calculated from GitHub profile contributions. It is not a weekly streak.</sub>
+</div>
 
 <br/>
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=yogeshprajapatii&label=Profile%20views&color=39D353&style=for-the-badge" alt="Profile Views" />
-</p>
+
+<div align="center">
+  <h3>📈 Contribution Activity · Last 90 Days</h3>
+  <a href="https://github.com/YogeshPrajapatii">
+    <img src="./profile/activity.svg" alt="GitHub activity graph for the last 90 days" width="100%" />
+  </a>
+</div>
+
+<br/>
+
+<div align="center">
+  <h3>📌 Commit & Repository Stats</h3>
+  <a href="https://github.com/YogeshPrajapatii">
+    <img src="./profile/stats.svg" alt="GitHub commit and repository statistics" height="190" />
+  </a>
+  <a href="https://github.com/YogeshPrajapatii">
+    <img src="./profile/languages.svg" alt="Most used programming languages" height="190" />
+  </a>
+</div>
+
+<sub>Analytics images are refreshed daily by GitHub Actions. The streak and contribution calendar include qualifying GitHub activity; the commit statistics card is a separate commit metric. Counts can differ because GitHub contributions can also include pull requests, issues, and reviews.</sub>
+
+<details>
+  <summary>Private contribution setup (optional)</summary>
+  <ol>
+    <li>For private repositories in the daily streak, create a classic GitHub token with the <code>repo</code> scope and save it in this repository as the Actions secret <code>STREAK_STATS_TOKEN</code>. Never put the token in this README or workflow file.</li>
+    <li>For private data in the commit and language cards, sign in to the <a href="https://github-stats-extended.vercel.app/frontend">GitHub Stats Extended card wizard</a> and enable <strong>GitHub Private Access</strong>. Without this, those cards may show public-repository statistics only.</li>
+  </ol>
+</details>
+
+---
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=yogeshprajapatii&label=Profile%20Views&color=39D353&style=flat-square" alt="Profile views" />
+  <br/><br/>
+  <i>Building consistently. Learning continuously. Improving one release at a time.</i>
+</div>
