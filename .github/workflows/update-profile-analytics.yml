@@ -31,8 +31,8 @@ jobs:
         uses: DenverCoder1/github-readme-streak-stats@v1
         with:
           options: user=${{ github.repository_owner }}&theme=dark&hide_border=true&border_radius=12&background=0D1117&ring=39D353&fire=39D353&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=C9D1D9&currStreakLabel=39D353&dates=8B949E&mode=daily&timezone=Asia%2FKolkata&disable_animations=true
-        path: profile/streak.svg
-        token: ${{ secrets.STREAK_STATS_TOKEN || github.token }}
+          path: profile/streak.svg
+          token: ${{ secrets.STREAK_STATS_TOKEN || github.token }}
 
       - name: Download activity graph and stats cards
         shell: bash
