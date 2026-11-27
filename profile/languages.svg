@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" viewBox="0 0 900 180" role="img" aria-label="Most Used Languages">
+  <rect width="900" height="180" rx="16" fill="#0D1117" stroke="#30363D"/>
+  <text x="450" y="78" fill="#39D353" font-family="Arial, sans-serif" font-size="27" font-weight="700" text-anchor="middle">Most Used Languages</text>
+  <text x="450" y="116" fill="#C9D1D9" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">Language statistics are being generated.</text>
+</svg>
