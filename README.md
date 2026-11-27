@@ -55,7 +55,7 @@ I enjoy working on clean architecture, offline-first experiences, API integratio
 ## 🛠️ Tech Stack
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=kotlin,java,android,gradle,firebase,sqlite,git,github,figma,postman&theme=dark" alt="Technology stack" />
+  <img src="https://skillicons.dev/icons?i=kotlin,java,androidstudio,gradle,firebase,sqlite,git,github,figma,postman&theme=dark" alt="Technology stack" />
 </div>
 
 ---
@@ -64,43 +64,17 @@ I enjoy working on clean architecture, offline-first experiences, API integratio
 
 <div align="center">
   <h3>🔥 Daily Contribution Streak</h3>
-  <a href="https://github.com/YogeshPrajapatii">
-    <img src="./profile/streak.svg" alt="Daily GitHub contribution streak" width="72%" />
-  </a>
-  <br/>
-  <sub>Daily streak is calculated from GitHub profile contributions. It is not a weekly streak.</sub>
-</div>
-
-<br/>
-
-<div align="center">
+  <img src="./profile/streak.svg" alt="Daily GitHub contribution streak" width="100%" />
+  <br/><br/>
   <h3>📈 Contribution Activity · Last 90 Days</h3>
-  <a href="https://github.com/YogeshPrajapatii">
-    <img src="./profile/activity.svg" alt="GitHub activity graph for the last 90 days" width="100%" />
-  </a>
+  <img src="./profile/activity.svg" alt="Daily GitHub contributions for the last 90 days" width="100%" />
+  <br/><br/>
+  <h3>📌 GitHub Activity Summary · Last 12 Months</h3>
+  <img src="./profile/stats.svg" alt="GitHub commits, pull requests, issues and total contributions in the last 12 months" width="100%" />
+  <br/><br/>
+  <h3>💻 Most Used Languages</h3>
+  <img src="./profile/languages.svg" alt="Most used languages in owned non-fork repositories" width="100%" />
 </div>
-
-<br/>
-
-<div align="center">
-  <h3>📌 Commit & Repository Stats</h3>
-  <a href="https://github.com/YogeshPrajapatii">
-    <img src="./profile/stats.svg" alt="GitHub commit and repository statistics" height="190" />
-  </a>
-  <a href="https://github.com/YogeshPrajapatii">
-    <img src="./profile/languages.svg" alt="Most used programming languages" height="190" />
-  </a>
-</div>
-
-<sub>Analytics images are refreshed daily by GitHub Actions. The streak and contribution calendar include qualifying GitHub activity; the commit statistics card is a separate commit metric. Counts can differ because GitHub contributions can also include pull requests, issues, and reviews.</sub>
-
-<details>
-  <summary>Private contribution setup (optional)</summary>
-  <ol>
-    <li>For private repositories in the daily streak, create a classic GitHub token with the <code>repo</code> scope and save it in this repository as the Actions secret <code>STREAK_STATS_TOKEN</code>. Never put the token in this README or workflow file.</li>
-    <li>For private data in the commit and language cards, sign in to the <a href="https://github-stats-extended.vercel.app/frontend">GitHub Stats Extended card wizard</a> and enable <strong>GitHub Private Access</strong>. Without this, those cards may show public-repository statistics only.</li>
-  </ol>
-</details>
 
 ---
 
