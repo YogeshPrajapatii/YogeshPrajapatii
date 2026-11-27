@@ -206,33 +206,46 @@ def write_activity(rows: list[tuple[date, int]]) -> None:
 
 
 def write_stats(collection: dict) -> None:
-    commits = int(collection.get("totalCommitContributions", 0))
-    prs = int(collection.get("totalPullRequestContributions", 0))
-    issues = int(collection.get("totalIssueContributions", 0))
-    total = int(collection.get("contributionCalendar", {}).get("totalContributions", 0))
+    """Render a compact activity card that visually matches the streak card."""
+    commits = int(collection.get("totalCommitContributions", 0) or 0)
+    prs = int(collection.get("totalPullRequestContributions", 0) or 0)
+    issues = int(collection.get("totalIssueContributions", 0) or 0)
+    total = int(collection.get("contributionCalendar", {}).get("totalContributions", 0) or 0)
+
     metrics = [
         ("COMMITS", commits, GREEN),
         ("PULL REQUESTS", prs, BLUE),
         ("ISSUES", issues, PURPLE),
         ("TOTAL CONTRIBUTIONS", total, ORANGE),
     ]
-    width, height = 1100, 210
-    parts = svg_start(width, height, "GitHub Activity Summary · Last 12 Months")
-    parts.append(svg_text(32, 38, "GITHUB ACTIVITY SUMMARY", 15, MUTED, 700))
-    cell_w = (width - 64) / 4
-    for i, (label, value, color) in enumerate(metrics):
-        x = 32 + i * cell_w
-        if i:
-            parts.append(f'<line x1="{x:.1f}" y1="62" x2="{x:.1f}" y2="172" stroke="{BORDER}"/>')
-        parts.append(f'<rect x="{x+18:.1f}" y="66" width="5" height="66" rx="2.5" fill="{color}"/>')
-        parts.append(svg_text(x + 38, 105, f"{value:,}", 31, TEXT, 700))
-        parts.append(svg_text(x + 38, 132, label, 12, MUTED, 700))
-    parts.append(svg_text(32, 181, "GitHub-attributed activity · rolling 12-month window", 11, MUTED))
+    width, height = 1100, 270
+    parts = svg_start(width, height, "GitHub Activity · Last 12 Months")
+    parts.append(svg_text(34, 42, "GITHUB ACTIVITY", 21, GREEN, 700))
+    parts.append(svg_text(34, 66, "ROLLING 12 MONTHS  ·  UPDATED DAILY", 12, MUTED, 600))
+
+    card_x, card_y, card_w, card_h, gap = 32, 91, 247, 139, 16
+    for i, (label, value, accent) in enumerate(metrics):
+        x = card_x + i * (card_w + gap)
+        parts.append(
+            f'<rect x="{x}" y="{card_y}" width="{card_w}" height="{card_h}" '
+            f'rx="14" fill="{PANEL}" stroke="{BORDER}"/>'
+        )
+        parts.append(
+            f'<rect x="{x}" y="{card_y}" width="{card_w}" height="5" '
+            f'rx="2.5" fill="{accent}"/>'
+        )
+        parts.append(svg_text(x + 20, card_y + 66, f"{value:,}", 39, TEXT, 700))
+        label_size = 11 if len(label) > 14 else 12
+        parts.append(svg_text(x + 20, card_y + 98, label, label_size, MUTED, 700))
+        parts.append(f'<circle cx="{x + card_w - 23}" cy="{card_y + 111}" r="4" fill="{accent}"/>')
+
+    parts.append(svg_text(34, 254, "GitHub-attributed activity · commits, pull requests, issues and calendar contributions", 11, MUTED))
     parts.append("</svg>")
     (OUT / "stats.svg").write_text("\n".join(parts), encoding="utf-8")
 
 
 def write_languages(repo_nodes: list[dict]) -> None:
+    """Render language mix as a clean companion card; tiny languages are grouped as Other."""
     totals: dict[str, int] = defaultdict(int)
     colors: dict[str, str] = {}
     for repo in repo_nodes:
@@ -243,27 +256,56 @@ def write_languages(repo_nodes: list[dict]) -> None:
                 totals[lang] += size
                 colors[lang] = edge.get("node", {}).get("color") or BLUE
 
-    top = sorted(totals.items(), key=lambda item: item[1], reverse=True)[:8]
-    width, height = 1100, max(230, 94 + len(top) * 26)
-    parts = svg_start(width, height, "Most Used Languages in Owned Non-fork Repositories")
-    parts.append(svg_text(32, 38, "MOST USED LANGUAGES", 15, MUTED, 700))
-    grand = sum(totals.values()) or 1
-    bar_x, bar_w = 270, 760
-    for idx, (lang, value) in enumerate(top):
-        y = 80 + idx * 26
-        pct = value / grand * 100
-        color = colors.get(lang, BLUE)
-        parts.append(svg_text(34, y + 13, lang, 13, TEXT, 600))
-        parts.append(f'<rect x="{bar_x}" y="{y}" width="{bar_w}" height="12" rx="6" fill="{PANEL}"/>')
-        parts.append(f'<rect x="{bar_x}" y="{y}" width="{bar_w*pct/100:.1f}" height="12" rx="6" fill="{color}"/>')
-        parts.append(svg_text(1050, y + 12, f"{pct:.1f}%", 12, MUTED, 500, "end"))
+    sorted_languages = sorted(totals.items(), key=lambda item: item[1], reverse=True)
+    grand_total = sum(totals.values())
+    if grand_total <= 0:
+        top: list[tuple[str, int, str]] = []
+    else:
+        visible = sorted_languages[:6]
+        remaining = sum(value for _, value in sorted_languages[6:])
+        top = [(name, value, colors.get(name, BLUE)) for name, value in visible]
+        if remaining > 0:
+            top.append(("Other", remaining, MUTED))
+
+    width, height = 1100, 390
+    parts = svg_start(width, height, "Repository Language Mix")
+    parts.append(svg_text(34, 42, "REPOSITORY LANGUAGE MIX", 21, GREEN, 700))
+    parts.append(svg_text(34, 66, "CODE SIZE ACROSS OWNED, NON-FORK REPOSITORIES", 12, MUTED, 600))
+
+    bar_x, bar_y, bar_w, bar_h = 34, 87, 1032, 16
+    parts.append(f'<rect x="{bar_x}" y="{bar_y}" width="{bar_w}" height="{bar_h}" rx="8" fill="{PANEL}"/>')
+    offset = 0.0
+    for name, value, color in top:
+        segment = bar_w * value / (grand_total or 1)
+        if segment > 0:
+            pct = value / (grand_total or 1) * 100
+            parts.append(
+                f'<rect x="{bar_x + offset:.2f}" y="{bar_y}" width="{segment:.2f}" '
+                f'height="{bar_h}" fill="{color}"><title>{esc(name)}: {pct:.2f}%</title></rect>'
+            )
+            offset += segment
+
     if not top:
-        parts.append(svg_text(width / 2, 115, "No language data available from accessible repositories", 14, MUTED, 400, "middle"))
-    parts.append(svg_text(32, height - 22, "Based on language bytes in owned, non-fork repositories", 11, MUTED))
+        parts.append(svg_text(width / 2, 175, "No language data available", 16, MUTED, 500, "middle"))
+    else:
+        col_w, col_gap = 500, 32
+        row_h, start_y = 62, 124
+        for idx, (name, value, color) in enumerate(top):
+            col, row = idx % 2, idx // 2
+            x = 34 + col * (col_w + col_gap)
+            y = start_y + row * row_h
+            pct = value / grand_total * 100
+            parts.append(f'<rect x="{x}" y="{y}" width="{col_w}" height="48" rx="10" fill="{PANEL}" stroke="{BORDER}"/>')
+            parts.append(f'<circle cx="{x + 18}" cy="{y + 19}" r="5" fill="{color}"/>')
+            parts.append(svg_text(x + 32, y + 23, name, 14, TEXT, 600))
+            parts.append(svg_text(x + col_w - 16, y + 23, f"{pct:.2f}%", 14, GREEN, 700, "end"))
+            track_x, track_y, track_w = x + 16, y + 34, col_w - 32
+            parts.append(f'<rect x="{track_x}" y="{track_y}" width="{track_w}" height="5" rx="2.5" fill="{BG}"/>')
+            parts.append(f'<rect x="{track_x}" y="{track_y}" width="{track_w * pct / 100:.2f}" height="5" rx="2.5" fill="{color}"/>')
+
+    parts.append(svg_text(34, height - 18, "Language share is calculated from repository code size; it is not a measure of proficiency.", 11, MUTED))
     parts.append("</svg>")
     (OUT / "languages.svg").write_text("\n".join(parts), encoding="utf-8")
-
-
 def main() -> int:
     token = os.environ.get("GH_TOKEN", "").strip()
     login = os.environ.get("GITHUB_LOGIN", "").strip()
