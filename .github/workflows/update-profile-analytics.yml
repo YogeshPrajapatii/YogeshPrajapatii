@@ -1,0 +1,87 @@
+name: Update Profile Analytics
+
+on:
+  schedule:
+    # Daily at 06:00 Asia/Kolkata (00:30 UTC)
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "README.md"
+      - ".github/workflows/update-profile-analytics.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-analytics
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Create profile asset directory
+        run: mkdir -p profile
+
+      - name: Generate daily streak SVG
+        uses: DenverCoder1/github-readme-streak-stats@v1
+        with:
+          options: user=${{ github.repository_owner }}&theme=dark&hide_border=true&border_radius=12&background=0D1117&ring=39D353&fire=39D353&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=C9D1D9&currStreakLabel=39D353&dates=8B949E&mode=daily&timezone=Asia%2FKolkata&disable_animations=true
+        path: profile/streak.svg
+        token: ${{ secrets.STREAK_STATS_TOKEN || github.token }}
+
+      - name: Download activity graph and stats cards
+        shell: bash
+        run: |
+          set -u
+          YEAR="$(date -u +%Y)"
+
+          fetch_svg() {
+            local url="$1"
+            local output="$2"
+            local temp="${output}.tmp"
+
+            echo "Fetching ${output}"
+            if curl --fail --location --silent --show-error \
+              --retry 4 --retry-all-errors --retry-delay 3 \
+              "$url" --output "$temp"; then
+              if grep -qi '<svg' "$temp"; then
+                mv "$temp" "$output"
+                echo "Updated ${output}"
+                return 0
+              fi
+            fi
+
+            rm -f "$temp"
+            echo "Could not refresh ${output}; keeping the previous copy when available."
+            return 0
+          }
+
+          fetch_svg \
+            "https://github-readme-activity-graph.ashutosh-dwivedi0710.workers.dev/graph?username=${GITHUB_REPOSITORY_OWNER}&days=90&bg_color=0D1117&color=C9D1D9&line=39D353&point=FFFFFF&area=true&hide_border=true&custom_title=Contribution%20Activity%20(Last%2090%20Days)" \
+            "profile/activity.svg"
+
+          fetch_svg \
+            "https://github-stats-extended.vercel.app/api?username=${GITHUB_REPOSITORY_OWNER}&show_icons=true&hide_border=true&count_private=true&commits_year=${YEAR}&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&bg_color=0D1117&title_color=39D353&text_color=C9D1D9&icon_color=39D353&border_radius=12&border_color=30363D&disable_animations=true" \
+            "profile/stats.svg"
+
+          fetch_svg \
+            "https://github-stats-extended.vercel.app/api/top-langs?username=${GITHUB_REPOSITORY_OWNER}&layout=compact&langs_count=8&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&hide_border=true&bg_color=0D1117&title_color=39D353&text_color=C9D1D9&border_radius=12&border_color=30363D&disable_animations=true" \
+            "profile/languages.svg"
+
+      - name: Commit refreshed analytics
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          if git diff --cached --quiet; then
+            echo "No analytics changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: refresh profile analytics"
+          git push
