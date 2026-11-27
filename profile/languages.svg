@@ -1,18 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="230" viewBox="0 0 1100 230" role="img" aria-label="Most Used Languages in Owned Non-fork Repositories">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="390" viewBox="0 0 1100 390" role="img" aria-label="Repository Language Mix">
 <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#39D353" stop-opacity="0.30"/><stop offset="100%" stop-color="#39D353" stop-opacity="0.015"/></linearGradient></defs>
-<rect width="1100" height="230" rx="18" fill="#0D1117" stroke="#30363D"/>
-<text x="32.0" y="38.0" fill="#9DA7B3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700" text-anchor="start">MOST USED LANGUAGES</text>
-<text x="34.0" y="93.0" fill="#E6EDF3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start">Kotlin</text>
-<rect x="270" y="80" width="760" height="12" rx="6" fill="#161B22"/>
-<rect x="270" y="80" width="711.4" height="12" rx="6" fill="#A97BFF"/>
-<text x="1050.0" y="92.0" fill="#9DA7B3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="500" text-anchor="end">93.6%</text>
-<text x="34.0" y="119.0" fill="#E6EDF3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start">HTML</text>
-<rect x="270" y="106" width="760" height="12" rx="6" fill="#161B22"/>
-<rect x="270" y="106" width="26.2" height="12" rx="6" fill="#e34c26"/>
-<text x="1050.0" y="118.0" fill="#9DA7B3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="500" text-anchor="end">3.4%</text>
-<text x="34.0" y="145.0" fill="#E6EDF3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" text-anchor="start">Python</text>
-<rect x="270" y="132" width="760" height="12" rx="6" fill="#161B22"/>
-<rect x="270" y="132" width="22.4" height="12" rx="6" fill="#3572A5"/>
-<text x="1050.0" y="144.0" fill="#9DA7B3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="500" text-anchor="end">3.0%</text>
-<text x="32.0" y="208.0" fill="#9DA7B3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" font-weight="400" text-anchor="start">Based on language bytes in owned, non-fork repositories</text>
+<rect width="1100" height="390" rx="18" fill="#0D1117" stroke="#30363D"/>
+<text x="34.0" y="42.0" fill="#39D353" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21" font-weight="700" text-anchor="start">REPOSITORY LANGUAGE MIX</text>
+<text x="34.0" y="66.0" fill="#9DA7B3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="600" text-anchor="start">CODE SIZE ACROSS OWNED, NON-FORK REPOSITORIES</text>
+<rect x="34" y="87" width="1032" height="16" rx="8" fill="#161B22"/>
+<rect x="34.00" y="87" width="965.98" height="16" fill="#A97BFF"><title>Kotlin: 93.60%</title></rect>
+<rect x="999.98" y="87" width="35.57" height="16" fill="#e34c26"><title>HTML: 3.45%</title></rect>
+<rect x="1035.55" y="87" width="30.45" height="16" fill="#3572A5"><title>Python: 2.95%</title></rect>
+<rect x="34" y="124" width="500" height="48" rx="10" fill="#161B22" stroke="#30363D"/>
+<circle cx="52" cy="143" r="5" fill="#A97BFF"/>
+<text x="66.0" y="147.0" fill="#E6EDF3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" text-anchor="start">Kotlin</text>
+<text x="518.0" y="147.0" fill="#39D353" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="end">93.60%</text>
+<rect x="50" y="158" width="468" height="5" rx="2.5" fill="#0D1117"/>
+<rect x="50" y="158" width="438.06" height="5" rx="2.5" fill="#A97BFF"/>
+<rect x="566" y="124" width="500" height="48" rx="10" fill="#161B22" stroke="#30363D"/>
+<circle cx="584" cy="143" r="5" fill="#e34c26"/>
+<text x="598.0" y="147.0" fill="#E6EDF3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" text-anchor="start">HTML</text>
+<text x="1050.0" y="147.0" fill="#39D353" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="end">3.45%</text>
+<rect x="582" y="158" width="468" height="5" rx="2.5" fill="#0D1117"/>
+<rect x="582" y="158" width="16.13" height="5" rx="2.5" fill="#e34c26"/>
+<rect x="34" y="186" width="500" height="48" rx="10" fill="#161B22" stroke="#30363D"/>
+<circle cx="52" cy="205" r="5" fill="#3572A5"/>
+<text x="66.0" y="209.0" fill="#E6EDF3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" text-anchor="start">Python</text>
+<text x="518.0" y="209.0" fill="#39D353" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700" text-anchor="end">2.95%</text>
+<rect x="50" y="220" width="468" height="5" rx="2.5" fill="#0D1117"/>
+<rect x="50" y="220" width="13.81" height="5" rx="2.5" fill="#3572A5"/>
+<text x="34.0" y="372.0" fill="#9DA7B3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" font-weight="400" text-anchor="start">Language share is calculated from repository code size; it is not a measure of proficiency.</text>
 </svg>
