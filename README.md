@@ -83,3 +83,4 @@ I enjoy working on clean architecture, offline-first experiences, API integratio
   <br/><br/>
   <i>Building consistently. Learning continuously. Improving one release at a time.</i>
 </div>
+
